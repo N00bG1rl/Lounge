@@ -1,39 +1,25 @@
-import myName from './resto';
-import homeTab from './homeTab';
-import menuTab from './menuTab';
-import mapTab from './mapTab';
-import openCity from './load';
-import _ from 'lodash';
+import tabOne from './events';
+import tabTwo from './coctails';
+import tabThree from './food';
+import tabFour from './About';
 import './style.css';
-import main from './main.jpg';
-
-function component() {
-  var content = document.getElementById("content");
-
-  // use your function!
-  content.innerHTML = myName('Cody');
-  content.classList.add('nav');
-
-  return content;
-}
-document.body.appendChild(component());
-
-var content = document.getElementById("content");
-
 
 function tabs() {
+  var content = document.getElementById("content");
+  // Create menu btn wrapper
   var tab = document.createElement("div");
   tab.classList.add('tab');
-
-  tab.innerHTML = `<button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">London</button>
-                   <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-                   <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>`;
-                   
+  // Get menu btn content from import
+  tab.innerHTML = `<button class="tablinks" onclick="menuBtns(event, 'Events')">Events</button>
+                   <button class="tablinks" onclick="menuBtns(event, 'Coctails')">Coctails</button>
+                   <button class="tablinks" onclick="menuBtns(event, 'Food')">Food Menu</button>
+                   <button class="tablinks" onclick="menuBtns(event, 'Contact')" id="defaultOpen">Contact</button>`;
+  // Add to html#content
   content.appendChild(tab);
-  content.appendChild(homeTab());
-  content.appendChild(menuTab());
-  content.appendChild(mapTab());
-  
+  content.appendChild(tabOne());
+  content.appendChild(tabTwo());
+  content.appendChild(tabThree());
+  content.appendChild(tabFour());
 }
 
 document.body.appendChild(tabs());

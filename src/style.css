@@ -1,6 +1,7 @@
 html,
 body {
-  min-width: 100%; min-height: 100%;
+  width: 100%;
+  min-width: 220px; min-height: 100%;
   overflow-x: hidden;
 }
 body {
@@ -13,39 +14,39 @@ body {
  /* Style the tab */
  .tab {
   overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-  width: 90%;
-  margin: 0 auto;
+  background-color: #ff80df;
+  width: 538px;
+  margin: 20px 0 10px 20px;
 }
-
 /* Style the buttons that are used to open the tab content */
 .tab button {
   background-color: inherit;
   float: left;
   border: none;
   outline: none;
+  color: #fff;
+  text-transform: uppercase;
   cursor: pointer;
-  padding: 14px 16px;
+  padding: 14px 40px;
   transition: 0.3s;
 }
-
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #ddd;
+  background-color: #ff33cc;
 }
-
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: #ccc;
+  background-color: #ff33cc;
 }
-
 /* Style the tab content */
 .tabcontent {
   display: none;
+  width: 512px;
   padding: 6px 12px;
+  margin-left: 20px;
   border: 1px solid #ccc;
   border-top: none;
+  background-color:rgba(0, 0, 0, 0.5);
   animation: fadeEffect 1s;
 }
 /* Style the close button */
@@ -54,7 +55,21 @@ body {
   cursor: pointer;
   font-size: 28px;
 }
-.topright:hover {color: red;}
+.topright:hover {color: #ff33cc;}
+
+img {width: 513px;}
+
+h3 {color: #ff33cc; font-size: 20px;}
+
+h5 {
+  margin-bottom: 0;
+  color: #ff80df;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+p {margin-top: 5px;}
+
 /* Go from zero to full opacity */
 @keyframes fadeEffect {
   from {opacity: 0;}
