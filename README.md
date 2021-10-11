@@ -20,4 +20,4 @@ July 7, 2017
 
 # View as image
 
-![github](.src/github.png)
+![github](./src/github.png)
