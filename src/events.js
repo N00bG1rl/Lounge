@@ -1,4 +1,5 @@
 import promo from './promo.jpg';
+
 function tabOne() {
   const tabContent = document.createElement("div");
   tabContent.classList.add('tabcontent');
@@ -14,4 +15,5 @@ function tabOne() {
 
   return tabContent;
 };
+
 export default tabOne

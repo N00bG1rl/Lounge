@@ -25,4 +25,5 @@ function tabThree() {
                           <p>Served with blue cheese, caramelized onions, lettuce and sliced tomato on brioche buns</p>`;
   return tabContent;
 };
+
 export default tabThree
