@@ -20,6 +20,8 @@
   "homepage": "https://github.com/N00bG1rl/restorant#readme",
   "devDependencies": {
     "css-loader": "^2.1.1",
+    "favicons": "^6.2.2",
+    "favicons-webpack-plugin": "^5.0.2",
     "file-loader": "^3.0.1",
     "style-loader": "^0.23.1",
     "webpack": "^4.29.6",
