@@ -3,7 +3,7 @@ import tabTwo from './coctails';
 import tabThree from './food';
 import tabFour from './About';
 
-import './style.css';
+import css from './style.css';
 
 function tabs() {
   var content = document.getElementById("content");
